@@ -27,6 +27,12 @@ body {
     font-size: 16px;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
 .container {
     width: 100%;
     padding-left: var(--container-padding);
@@ -164,6 +170,26 @@ a:hover {
     padding-bottom: 0.5rem;
  }
 
+ footer {
+
+    font-size: 14px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--color-gray);
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+    }
+    
+    .credit {
+        display: none;
+    }
+ }
+
+
  @media (min-width: 768px) {
     .container {
         max-width: 720px;
@@ -175,6 +201,20 @@ a:hover {
 
     header .container {
         gap: 3rem;
+     }
+
+     footer {
+
+        font-size: 14px;
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            }
+        
+        .credit {
+            display: block;
+        }
      }
  }
 
