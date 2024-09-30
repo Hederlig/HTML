@@ -1,5 +1,297 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .btn-toggle-switch .lable {
+        display: block;
+    }
+
+    header .container {
+        gap: 3rem;
+    }
+
+    footer {
+
+        font-size: 14px;
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .credit {
+            display: block;
+        }
+    }
+
+    #brands {
+        display: block;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.25rem;
+        }
+    }
+
+    #brand-1,
+    #brand-2 {
+        display: none;
+    }
+
+
+    #hero {
+        padding-bottom: 0rem !important;
+
+        .container {
+            grid-template-columns: 1fr 1fr !important;
+            grid-template-areas: "headline headline"
+                "content images" !important;
+
+
+            .images {
+                position: relative;
+
+                display: block;
+                padding-top: 21rem;
+
+                .img-back {
+                    position: absolute;
+                    z-index: -10;
+                    bottom: 0;
+                    right: 100px;
+                    width: 70%;
+                    height: auto;
+
+                }
+
+                .img-front {
+                    position: absolute;
+                    z-index: -5;
+                    bottom: 0;
+                    right: 0;
+                    width: 70%;
+                    height: auto;
+                }
+
+            }
+
+            .content {
+                text-align: left;
+            }
+
+            .discover-more {
+                justify-content: flex-start;
+            }
+
+            .headline {
+                h1 {
+                    font-size: 56px;
+                }
+            }
+        }
+    }
+
+    #features {
+
+
+        .container {
+            text-align: center;
+
+            h1 {
+                font-size: 33px !important;
+                font-weight: 800;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .phonefeatures {
+                display: none;
+            }
+
+            #services {
+                display: grid;
+                grid-template-columns: 1fr 1fr !important;
+                text-align: left;
+
+
+                h1 {
+                    padding-left: 5rem;
+                    grid-template-columns: auto !important;
+                    font-size: 20px !important;
+                }
+
+                p {
+                    font-size: 16px !important;
+                    padding-left: 5rem;
+                    padding-right: 2rem !important;
+
+                }
+
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    header .container {
+        grid-template-columns: auto 1fr auto auto;
+        gap: 3rem;
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    #auth-signin {
+        display: block;
+    }
+
+    .btn-mobile {
+        display: none;
+    }
+
+    #brand-1,
+    #brand-2 {
+        display: flex;
+    }
+
+    #hero {
+        .container {
+            grid-template-columns: 2fr 3fr !important;
+            grid-template-areas: "headline images"
+                "content images" !important;
+        }
+
+        .headline {
+            h1 {
+                font-size: 56px;
+                text-align: left;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row !important;
+            gap: 1rem;
+
+        }
+
+        .discover-more {
+            align-items: left !important;
+            justify-content: left !important;
+            gap: 1rem !important;
+            margin-top: 2rem !important;
+            padding-bottom: 2rem;
+        }
+
+        .images {
+            position: relative !important;
+
+            display: block !important;
+            padding-top: 21rem !important;
+
+            .img-back {
+
+                position: absolute !important;
+                z-index: -10;
+                bottom: 0;
+                right: auto !important;
+                width: 120% !important;
+                height: 400px !important;
+            }
+
+            .img-front {
+                position: absolute;
+                z-index: -5;
+                bottom: 0;
+                left: 170px !important;
+                width: 120% !important;
+                height: 480px !important;
+            }
+
+        }
+
+
+    }
+
+    #features {
+
+        .container {
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 200px;
+
+            .phonefeatures {
+                grid-row: 1;
+                grid-row: 1 / span 2;
+                display: block !important;
+                width: 120%;
+                height: 120%;
+                justify-self: start !important;
+                padding-right: 20rem;
+
+            }
+
+
+            .headline {
+                grid-column: 2;
+                grid-row: 1;
+                text-align: start !important;
+
+
+                h1 {
+                    font-size: 33px !important;
+                    font-weight: 800;
+                }
+
+                p {
+                    font-size: 18px !important;
+                }
+            }
+
+            #services {
+                grid-column: 2;
+                grid-row: 2;
+                align-self: center;
+                text-align: left;
+                padding: 1rem;
+
+
+                h1 {
+                    padding-left: 5rem;
+                    font-size: 20px !important;
+                }
+
+                p {
+                    font-size: 16px !important;
+                    padding-left: 5rem;
+                    padding-right: 2rem !important;
+
+                }
+
+            }
+        }
+    }
+
+
+}
+
+
+
 :root {
     --color-dark: #0B0F19;
     --color-primary: #6366F1;
@@ -234,299 +526,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-
-    .btn-toggle-switch .lable {
-        display: block;
-    }
-
-    header .container {
-        gap: 3rem;
-    }
-
-    footer {
-
-        font-size: 14px;
-
-        .container {
-            display: flex;
-            justify-content: center;
-        }
-
-        .credit {
-            display: block;
-        }
-    }
-
-    #brands {
-        display: block;
-
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 1.25rem;
-        }
-    }
-
-    #brand-1,
-    #brand-2 {
-        display: none;
-    }
-
-
-    #hero {
-        padding-bottom: 0rem !important;
-
-        .container {
-            grid-template-columns: 1fr 1fr !important;
-            grid-template-areas: "headline headline"
-                "content images" !important;
-
-
-            .images {
-                position: relative;
-
-                display: block;
-                padding-top: 21rem;
-
-                .img-back {
-                    position: absolute;
-                    z-index: -10;
-                    bottom: 0;
-                    right: 100px;
-                    width: 70%;
-                    height: auto;
-
-                }
-
-                .img-front {
-                    position: absolute;
-                    z-index: -5;
-                    bottom: 0;
-                    right: 0;
-                    width: 70%;
-                    height: auto;
-                }
-
-            }
-
-            .content {
-                text-align: left;
-            }
-
-            .discover-more {
-                justify-content: flex-start;
-            }
-
-            .headline {
-                h1 {
-                    font-size: 56px;
-                }
-            }
-        }
-    }
-
-    #features {
-
-
-        .container {
-            text-align: center;
-
-            h1 {
-                font-size: 33px !important;
-                font-weight: 800;
-            }
-
-            p {
-                font-size: 18px;
-            }
-
-            .phonefeatures {
-                display: none;
-            }
-
-            #services {
-                display: grid;
-                grid-template-columns: 1fr 1fr !important;
-                text-align: left;
-
-
-                h1 {
-                    padding-left: 5rem;
-                    grid-template-columns: auto !important;
-                    font-size: 20px !important;
-                }
-
-                p {
-                    font-size: 16px !important;
-                    padding-left: 5rem;
-                    padding-right: 2rem !important;
-
-                }
-
-            }
-        }
-    }
-}
-
-
-
-@media (min-width: 1400px) {
-    .container {
-        max-width: 1320px;
-    }
-
-    header .container {
-        grid-template-columns: auto 1fr auto auto;
-        gap: 3rem;
-    }
-
-    .navbar {
-        display: block;
-    }
-
-    #auth-signin {
-        display: block;
-    }
-
-    .btn-mobile {
-        display: none;
-    }
-
-    #brand-1,
-    #brand-2 {
-        display: flex;
-    }
-
-    #hero {
-        .container {
-            grid-template-columns: 2fr 3fr !important;
-            grid-template-areas: "headline images"
-                "content images" !important;
-        }
-
-        .headline {
-            h1 {
-                font-size: 56px;
-                text-align: left;
-            }
-        }
-
-        .buttons {
-            display: flex;
-            flex-direction: row !important;
-            gap: 1rem;
-
-        }
-
-        .discover-more {
-            align-items: left !important;
-            justify-content: left !important;
-            gap: 1rem !important;
-            margin-top: 2rem !important;
-            padding-bottom: 2rem;
-        }
-
-        .images {
-            position: relative !important;
-
-            display: block !important;
-            padding-top: 21rem !important;
-
-            .img-back {
-
-                position: absolute !important;
-                z-index: -10;
-                bottom: 0;
-                right: auto !important;
-                width: 120% !important;
-                height: 400px !important;
-            }
-
-            .img-front {
-                position: absolute;
-                z-index: -5;
-                bottom: 0;
-                left: 170px !important;
-                width: 120% !important;
-                height: 480px !important;
-            }
-
-        }
-
-
-    }
-
-    #features {
-
-        .container {
-            text-align: center;
-            display: grid;
-            grid-template-columns: 1fr 1fr; 
-            grid-template-rows: 1fr 1fr;
-             height: 200px;
-             
-             .phonefeatures {
-                grid-row: 1;
-                grid-row: 1 / span 2;
-                display: block !important;
-                width: 120%;
-                height: 120%;
-                justify-self: start !important;
-                padding-right: 20rem;
-
-            }
-
-
-            .headline {
-                grid-column: 2;
-                grid-row: 1;
-                text-align: start !important;
-               
-
-            h1 {
-                font-size: 33px !important;
-                font-weight: 800;
-            }
-
-            p {
-                font-size: 18px !important;
-            }              
-            }
-
-            #services {
-                grid-column: 2;
-                grid-row: 2; 
-                align-self: center;         
-                text-align: left;
-                padding: 1rem;
-
-
-                h1 {
-                    padding-left: 5rem;
-                    font-size: 20px !important;
-                }
-
-                p {
-                    font-size: 16px !important;
-                    padding-left: 5rem;
-                    padding-right: 2rem !important;
-
-                }
-
-            }
-        }
-    }
-
-
 }
 
 #hero {
