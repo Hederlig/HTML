@@ -16,7 +16,15 @@
     }
 
     header .container {
-        gap: 3rem;
+        
+            grid-template-columns: auto 1fr auto auto !important;
+            gap: 3rem;
+            justify-items: end;
+            }
+            .lable {
+                
+            }
+        
     }
 
     footer {
@@ -210,15 +218,16 @@
     #reviews {
         display: none;
     }
-}
+
 @media (min-width: 1400px) {
     .container {
         max-width: 1320px;
     }
 
     header .container {
-        grid-template-columns: auto 1fr auto auto;
+        grid-template-columns: auto 1fr auto auto !important;
         gap: 3rem;
+        justify-items: start;
     }
 
     .btn-primary {
@@ -243,7 +252,8 @@
     }
 
     .navbar {
-        display: block !important;
+        display: flex !important;
+
     }
 
     #auth-signin {
