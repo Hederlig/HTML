@@ -206,8 +206,11 @@
     #factdetail {
         display: none;
     }
-}
 
+    #reviews {
+        display: none;
+    }
+}
 @media (min-width: 1400px) {
     .container {
         max-width: 1320px;
@@ -627,13 +630,83 @@
 
     }
 
+    #reviews {
+        display: block !important;
+        margin-top: 15rem;
+        background-color: var(--color-gray100);
+        
+        .container{
+            display: flex;
+            flex-direction: row;
+            
+            h1 {
+    
+                font-size: 40px;
+                font-weight: 800;
+            }
+
+            p {
+             
+            }
+        
+            .quote {
+                position: absolute;
+                padding-left: 53rem;
+                
+            }
+
+            .quote1 {
+                position: absolute;
+                padding-left: 25rem;
+            }
+    
+            .users {
+                padding-top: 2rem;
+            margin-top: 2rem;    
+            width: 21rem;
+
+            margin-left: 7rem;
+            background-color: var(--color-white);
+
+            .star{
+                padding-bottom: 1rem;
+            }
+            .text {
+                font-size: 18;
+
+            }
+            h5 {
+                font-size: 18;
+
+            }
+            
+
+            .profil {
+                display: flex !important;
+                flex-direction: row;
+            }
+
+            .name {
+                font-size: 18;
+                font-weight: 800;
+            }
+                .work {
+                 
+                    color: var(--color-gray);
+                }
+    
+            }
+    
+        }
+    }
+
     :root {
         --color-dark: #0B0F19;
         --color-primary: #6366F1;
         --color-gray: #9397AD;
         --color-lightgray: #E2E5F1;
         --color-white: #FFFFFF;
-
+        --color-gray100: #F3F6FF;
         --container-padding: 1rem;
         --transition-time: all 0.2s;
     }
@@ -641,6 +714,8 @@
     * {
         box-sizing: border-box;
     }
+
+
 }
 
 body,
@@ -711,7 +786,7 @@ a:hover {
 }
 
 .btn-downloadapp {
-    background-color: var(--color-dark);
+    background-color: var(--color-dark) !important;
     color: var(--color-white);
     border-radius: 8px;
     padding: 12px 25px;
@@ -994,4 +1069,19 @@ footer {
 
 #factdetail {
     display: none;
+}
+
+#reviews {
+    display: none;
+}
+
+:root {
+    --color-dark: #0B0F19;
+    --color-primary: #6366F1;
+    --color-gray: #9397AD;
+    --color-lightgray: #E2E5F1;
+    --color-white: #FFFFFF;
+    --color-gray100: #F3F6FF;
+    --container-padding: 1rem;
+    --transition-time: all 0.2s;
 }
