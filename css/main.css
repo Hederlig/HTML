@@ -227,7 +227,7 @@
     header .container {
         grid-template-columns: auto 1fr auto auto !important;
         gap: 3rem;
-        justify-items: start;
+        justify-items: start !important;
     }
 
     .btn-primary {
@@ -883,11 +883,12 @@ a:hover {
 header .container {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr auto auto;
+    grid-template-columns: auto 1fr auto auto;
     grid-template-areas: "logo sw mobile";
     gap: 1.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    justify-items:end;
 }
 
 footer {
