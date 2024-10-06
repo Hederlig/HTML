@@ -56,7 +56,6 @@ footer {
     display: none;
 }
 
-
 #hero {
     padding-bottom: 0rem !important;
 
@@ -155,7 +154,7 @@ footer {
 
 
     .container {
-        display: flexbox;
+        /* display: flex !important; */
         flex-direction: column;
 
         .mobile {
@@ -1240,6 +1239,100 @@ footer {
 #reviews {
     display: none;
 }
+
+/* #faq {
+    .container {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        h5 {
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+           
+        }
+
+        .info {
+            display: grid;
+            justify-items: center;
+            img {
+                padding-bottom: 1rem;
+            }
+
+            button {
+                border: none;
+                background: none;
+            }
+
+            .tele {
+                display: flex;
+                flex-direction: row;
+
+                .call {
+                    padding-right: 5rem;
+
+                    .phonebtn {
+                        padding-top: 1.5rem;
+                        padding-left: 3px;
+                        color: var(--color-primary);
+                    }
+                }
+
+                .chat {
+
+                    .chatbtn {
+                        padding-top: 1.5rem;
+                        padding-left: 3px;
+                        color: #22C55E;
+                    }
+                }
+            }
+        }
+
+
+        .accordion {
+           
+            flex-grow: 1;
+            details {
+                padding-bottom: 4rem;
+                
+            }
+
+            summary {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                justify-items: end;
+
+                font-size: 16px;
+                list-style: none;
+                font-weight: 800;
+            }
+
+            p {
+                font-size: 14px;
+                padding-top: 2rem;
+                color: var(--color-gray);
+            }
+
+
+
+            .arrow {
+                height: 20px;
+            }
+
+            .accordion[open]>img::after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+} */
 
 :root {
     --color-dark: #0B0F19;
